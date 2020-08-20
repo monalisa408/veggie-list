@@ -4,7 +4,7 @@ pipeline {
     stage('Initial build') {
       agent {
         docker {
-          image 'angular/ngcontainer'
+          image 'angular/ngcontainer:latest'
         }
 
       }
