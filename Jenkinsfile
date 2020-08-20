@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Initial build') {
       agent {
-        dockerfile {
-          filename 'angular/ngcontainer:latest'
+        docker {
+          image 'angular/ngcontainer:latest'
         }
 
       }
